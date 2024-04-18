@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .card .illustration-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .card {
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px 7px 7px 1px;
+    border-color: hsl(0, 0%, 7%);
+}
+
+.container .card .btn {
+    background-color: hsl(47, 88%, 63%);
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-weight: 800;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.container .card .content {
+    margin: 20px 0;
+}
+
+.container .card .content .published {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .card .content .foundations {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.container .card .content a {
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    transition: 0.3s;
+}
+
+.container .card .content a:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.container .card .content .text {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+}
+
+.container .card .content .autor {
+    display: flex;
+    align-items: center;
+}
+
+.container .card .content .avatar {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.container .card .content .name-autor {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    transform: translateY(35%);
+}
+
+@media(max-width: 420px) {
+   
+    .container .card {
+        width: 300px;
+    }
+
+    .container .card .content .published {
+        font-size: 12px;
+    }
+
+    .container .card .content .text {
+        font-size: 12px;
+    }
+
+    .container .card .content .foundations {
+        font-size: 15px;
+    }
+
+    .container .card .content .name-autor {
+        font-size: 10px;
+    }
+
+}
